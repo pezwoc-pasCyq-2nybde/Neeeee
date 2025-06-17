@@ -2,10 +2,29 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; URL='https://gxrihh-mr.myshopify.com'" />
-  <title>جارٍ الانتقال إلى المتجر</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تجربة iframe</title>
+  <style>
+    html, body {
+      margin:0; padding:0; height:100%;
+      overflow:hidden;
+      background:#fff;
+    }
+    iframe {
+      border:none;
+      width:100vw;
+      height:100vh;
+      pointer-events: auto;
+    }
+  </style>
 </head>
 <body>
-  <p>إذا لم يتم التوجيه تلقائيًا، <a href="https://gxrihh-mr.myshopify.com">اضغط هنا</a> للانتقال إلى المتجر.</p>
+  <iframe
+    src="https://gxrihh-mr.myshopify.com"
+    sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-pointer-lock"
+    allow="fullscreen; geolocation"
+    title="متجر شوبيفاي"
+    loading="eager"
+  ></iframe>
 </body>
 </html>
